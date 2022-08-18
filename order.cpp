@@ -1,6 +1,4 @@
 #include "order.h"
-#include "side.h"
-#include "type.h"
 
 Order::Order(string name, double price, int quantity, Type type, Side side){
     this->name = name;
@@ -8,6 +6,7 @@ Order::Order(string name, double price, int quantity, Type type, Side side){
     this->quantity = quantity;
     this->type = type;
     this->side = side;
+    status = PENDING;
 }
 
 string Order::get_name(){
@@ -21,8 +20,16 @@ int Order::get_quantity(){
     return quantity;
 }
 
-void Order::set_name(string name) {
-    this->name = name;
+Type Order::get_type(){
+    return type;
+}
+
+Side Order::get_side(){
+    return side;
+}
+
+Status Order::get_status(){
+    return status;
 }
 
 void Order::set_price(double price) {
@@ -31,4 +38,16 @@ void Order::set_price(double price) {
 
 void Order::set_quantity(int quantity){
     this->quantity = quantity;
+}
+
+void Order::set_type(Type type){
+    this->type = type;
+}
+
+void Order::set_side(Side side){
+    this->side = side;
+}
+
+void Order::set_status(Status status){
+    this->status = status;
 }
