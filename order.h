@@ -1,5 +1,5 @@
-#ifndef order.h
-#define order.h
+#ifndef ORDER_H
+#define ORDER_H
 #include <iostream>
 #include "type.h"
 #include "side.h"
@@ -7,7 +7,7 @@ using namespace std;
 
 class Order{
 public:
-    Order(string name, double price, int quantity);
+    Order(string name, double price, int quantity, Type type, Side side);
 
     //Pure virtual functions for subclasses
     virtual void buy(string name, double price, int quantity) const = 0;
@@ -32,5 +32,7 @@ private:
     string name;
     double price;
     int quantity;
+    Type type;
+    Side side;
 };
 #endif

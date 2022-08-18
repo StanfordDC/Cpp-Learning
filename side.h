@@ -1,5 +1,6 @@
-#ifndef side.h
-#define side.h
+#ifndef SIDE_H
+#define SIDE_H
+
 enum Side{
     BUY,
     SELL

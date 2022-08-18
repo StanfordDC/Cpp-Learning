@@ -1,9 +1,13 @@
 #include "order.h"
+#include "side.h"
+#include "type.h"
 
-Order::Order(string name, double price, int quantity){
+Order::Order(string name, double price, int quantity, Type type, Side side){
     this->name = name;
     this->price = price;
     this->quantity = quantity;
+    this->type = type;
+    this->side = side;
 }
 
 string Order::get_name(){

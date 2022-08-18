@@ -1,5 +1,6 @@
-#ifndef type.h
-#define type.h
+#ifndef TYPE_H
+#define TYPE_H
+
 enum Type{
     LMT,
     MKT
