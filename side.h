@@ -1,0 +1,4 @@
+enum Side{
+    BUY,
+    SELL
+};
