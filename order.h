@@ -1,4 +1,8 @@
+#ifndef order.h
+#define order.h
 #include <iostream>
+#include "type.h"
+#include "side.h"
 using namespace std;
 
 class Order{
@@ -29,3 +33,4 @@ private:
     double price;
     int quantity;
 };
+#endif
