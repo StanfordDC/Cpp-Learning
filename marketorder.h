@@ -3,7 +3,8 @@
 
 using namespace std;
 
-class MarketOrder: public Order{
+class MarketOrder: public Order
+{
     using Order::Order;
 
 };

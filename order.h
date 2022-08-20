@@ -6,7 +6,8 @@
 #include "status.h"
 using namespace std;
 
-class Order{
+class Order
+{
 public:
     Order(string name, double price, int quantity, Type type, Side side);
 
