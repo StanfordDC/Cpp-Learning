@@ -3,7 +3,7 @@
 using namespace std;
 
 class LimitOrder: public Order{
-    LimitOrder(string name, double price, int quantity);
+    using Order::Order;
 
 
 };
