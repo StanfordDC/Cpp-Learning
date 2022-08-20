@@ -1,7 +1,8 @@
 #ifndef TYPE_H
 #define TYPE_H
 
-enum Type{
+enum Type
+{
     LMT,
     MKT
 };

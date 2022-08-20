@@ -1,7 +1,8 @@
 #ifndef STATUS_H
 #define STATUS_h
 
-enum Status{
+enum Status
+{
     PENDING,
     PARTIAL,
     FILLED

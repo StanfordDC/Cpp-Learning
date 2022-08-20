@@ -1,7 +1,8 @@
 #ifndef SIDE_H
 #define SIDE_H
 
-enum Side{
+enum Side
+{
     BUY,
     SELL
 };

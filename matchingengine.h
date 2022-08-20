@@ -13,7 +13,8 @@ private:
 
 public:
     //Singleton constructor
-    static MatchingEngine& get_instance(){
+    static MatchingEngine& get_instance()
+    {
         static MatchingEngine instance;
         return instance;
     } 
