@@ -7,8 +7,8 @@ class MatchingEngine
 {
 private: 
     MatchingEngine() = default;
-    unordered_map<Order, int> buy_orders;
-    unordered_map<Order, int> sell_orders;
+    unordered_map<Order*, int> buy_orders;
+    unordered_map<Order*, int> sell_orders;
     vector<Order> order_records;
 
 public:
@@ -19,10 +19,22 @@ public:
         return instance;
     } 
 
-    unordered_map<Order, int> get_buy_orders();
+    unordered_map<Order*, int> get_buy_orders();
 
-    unordered_map<Order, int> get_sell_orders();
+    unordered_map<Order*, int> get_sell_orders();
 
     vector<Order> get_order_records();
 
 };
+
+namespace std
+{
+    template<>
+    struct hash<Order>
+    {
+        size_t operator()(const Order& key)
+        {
+
+        }
+    }
+}
