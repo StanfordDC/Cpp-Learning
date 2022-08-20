@@ -1,26 +1,27 @@
 #include <iostream>
 #include <unordered_map>
+#include <vector>
 #include "order.h"
 
 class MatchingEngine
 {
 private: 
     MatchingEngine() = default;
-    unordered_map<Order, int> buyOrders;
-    unordered_map<Order, int> sellOrders;
-    vector<Order> orderRecords;
+    unordered_map<Order, int> buy_orders;
+    unordered_map<Order, int> sell_orders;
+    vector<Order> order_records;
 
 public:
     //Singleton constructor
-    static MatchingEngine& getInstance(){
+    static MatchingEngine& get_instance(){
         static MatchingEngine instance;
         return instance;
     } 
 
-    unordered_map<Order, int> getBuyOrders();
+    unordered_map<Order, int> get_buy_orders();
 
-    unordered_map<Order, int> getSellOrders();
+    unordered_map<Order, int> get_sell_orders();
 
-    vector<Order> getOrderRecords();
+    vector<Order> get_order_records();
 
 };
