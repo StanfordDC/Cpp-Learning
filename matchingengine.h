@@ -27,14 +27,3 @@ public:
 
 };
 
-namespace std
-{
-    template<>
-    struct hash<Order>
-    {
-        size_t operator()(const Order& key)
-        {
-
-        }
-    }
-}
