@@ -41,6 +41,7 @@ public:
     void set_status(Status status);
     
 private:
+    uintptr_t id;
     string name;
     double price;
     int quantity;
